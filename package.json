@@ -1,0 +1,50 @@
+{
+  "name": "nextjs-setup-chakra",
+  "description": "React setup",
+  "engines": {
+    "npm": "please use yarn",
+    "node": "18"
+  },
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "sitemap": "next-sitemap --next-sitemap.config.js",
+    "codegen": "graphql-codegen --config codegen.ts",
+    "favicons": "node config/favicons",
+    "svgr": "npx @svgr/cli@5 ./src/icons --template ./src/icons/svgrtemplate.js --ext tsx --out-dir ./src/icons/components --ref --index-template ./src/icons/index-template.js"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.8.1",
+    "@chakra-ui/react": "^2.8.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@graphql-codegen/cli": "^5.0.0",
+    "@types/node": "20.5.7",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "css-loader": "^6.8.1",
+    "eslint": "8.48.0",
+    "eslint-config-next": "13.4.19",
+    "favicons": "^6.2.1",
+    "formik": "^2.4.3",
+    "framer-motion": "^10.16.1",
+    "graphql": "^16.8.0",
+    "lottie-react": "^2.4.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "next": "13.4.19",
+    "next-seo": "^6.1.0",
+    "next-sitemap": "^4.2.2",
+    "polished": "^4.2.2",
+    "prettier": "^3.0.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
+    "react-select": "^5.7.4",
+    "typescript": "5.2.2",
+    "zustand": "^4.4.1"
+  }
+}
